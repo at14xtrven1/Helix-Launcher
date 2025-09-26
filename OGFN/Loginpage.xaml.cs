@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Windows;
 
-namespace WpfApp1 // MUST MATCH the XAML namespace
+namespace WpfApp1 
 {
     public partial class LoginPage : Window
     {
@@ -16,8 +16,7 @@ namespace WpfApp1 // MUST MATCH the XAML namespace
         public LoginPage()
         {
             InitializeComponent();
-
-            // Auto-login if user file exists
+ 
             if (File.Exists(UserFilePath))
             {
                 var savedData = File.ReadAllText(UserFilePath);
@@ -92,3 +91,4 @@ namespace WpfApp1 // MUST MATCH the XAML namespace
         }
     }
 }
+
