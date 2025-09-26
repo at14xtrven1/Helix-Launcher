@@ -70,8 +70,7 @@ namespace Helix
                 MessageBox.Show("You can only use and play 24.20 / Chapter 4 Season 2 right now!", "Invalid Folder", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-
-            // Update INI with new path
+ 
             IniFile.WriteValue("Auth", "Path", selectedPath, configIniPath);
 
             MessageBox.Show("Build folder saved to config.ini", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -113,7 +112,7 @@ namespace Helix
                         using (WebClient client = new WebClient())
                         {
                             client.DownloadFile(
-                                "https://github.com/secretOGFN/test/raw/refs/heads/main/cobalt.dll",
+                                "Your DLL Here",
                                 dllPath);
                         }
                     }
@@ -179,3 +178,4 @@ namespace Helix
         }
     }
 }
+
