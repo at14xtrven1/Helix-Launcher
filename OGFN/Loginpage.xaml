@@ -9,10 +9,9 @@
         Width="800" Height="470">
 
     <Grid>
-        <!-- Background Image -->
+ 
         <Image Source="https://i.imgur.com/iKD9Hao.jpeg" Stretch="Fill"/>
-
-        <!-- Semi-transparent Dark Panel -->
+ 
         <Border Background="#CC1E1E1E"
                 CornerRadius="20"
                 Width="400"
@@ -28,15 +27,13 @@
                            Foreground="White" 
                            HorizontalAlignment="Center" 
                            Margin="0,0,0,10"/>
-
-                <!-- Subtitle -->
+ 
                 <TextBlock Text="Login with your credentials" 
                            FontSize="14" 
                            Foreground="#BBB" 
                            HorizontalAlignment="Center"
                            Margin="0,0,0,20"/>
-
-                <!-- Email -->
+ 
                 <TextBlock Text="Email" 
                            Foreground="White" 
                            FontWeight="SemiBold"/>
@@ -45,7 +42,7 @@
                              TextChanged="InputField_TextChanged"/>
                 </Border>
 
-                <!-- Password -->
+ 
                 <TextBlock Text="Password" 
                            Foreground="White" 
                            FontWeight="SemiBold"/>
@@ -54,13 +51,13 @@
                                  PasswordChanged="InputField_TextChanged"/>
                 </Border>
 
-                <!-- Remember Me -->
+ 
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,15" VerticalAlignment="Center">
                     <CheckBox x:Name="RememberCheckBox" Margin="0,0,5,0"/>
                     <TextBlock Text="Remember Me" Foreground="White" VerticalAlignment="Center"/>
                 </StackPanel>
 
-                <!-- Login Button -->
+ 
                 <Button Background="#0078D7"
                         Foreground="White"
                         FontWeight="Bold"
@@ -80,8 +77,7 @@
                 </Button>
             </StackPanel>
         </Border>
-
-        <!-- Loading Overlay -->
+ 
         <Grid x:Name="LoadingOverlay" Background="#AA000000" Visibility="Collapsed"
               HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Panel.ZIndex="10">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -109,3 +105,4 @@
         </Grid>
     </Grid>
 </Window>
+
